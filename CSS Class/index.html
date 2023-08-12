@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Desiteck : My First Landing Page</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav>
+      <div class="logo">
+        <a href="https://home">
+          <img src="assets/desitecklogo.png" alt="">
+          <span>DesiTeck</span>
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="active">Home</li>
+          <li>Profolio</li>
+          <li>Price</li>
+          <li>Testimonial</li>
+        </ul>
+      </div>
+      <button>Get Started</button>
+      <div class="mobile-menu">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero-cotainer">    
+      <div class="left"><h1>Where Code and Creativity Converge: Explore <span class="heading_gradiant">DesiTeck's </span> Digital Realm!</h1>
+        <p>Discover Desiteck, your gateway to a dynamic digital realm where coding, creativity, and cybersecurity unite. As India's educational beacon, we offer free online learning in backend, frontend, and bug bounty disciplines. Our journey, born on YouTube, now expands to this website—a hub of tutorials, guides, and resources for beginners and experts. Join us in redefining online education and innovation, one line of code at a time.</p>
+        <button>Explore More</button></div>
+      <div class="right">
+        <img src="assets/heorimage.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <section class="footer-container">
+      <div class="logo">
+        <img src="assets/desitecklogo.png" alt="">
+        <span>DesiTeck</span>
+      </div>
+      <div class="menu footer-menu"><ul>
+        <li>Home</li>
+        <li>Profolio</li>
+        <li>Price</li>
+        <li>Testimonial</li>
+      </ul></div>
+      <div class="footer-social">
+        <a href="http://instgram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-instagram-fill" title="Instagram"></i></a>
+        </a>        
+        <a href="http://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-twitter-x-fill" title="Twitter"></i>
+        </a>
+        <a href="http://linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-linkedin-fill" title="Linkedin"></i>
+        </a>
+        <a href="http://youtube.com/" target="_blank" rel="noopener noreferrer">
+          <i class="ri-youtube-fill" title="YouTube"></i>
+        </a>
+      </div>
+      <div class="footer-copyrite"><b>Copyright &copy; </b> All right reserved by DesiTeck</div>
+    </section>
+  </footer>
+  <script>
+    const header = document.querySelector(".page-header");
+    const toggleClass = "sticky";
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      //alert(currentScroll)
+      if (currentScroll > 20) {
+        header.classList.add(toggleClass);
+      } else {
+        header.classList.remove(toggleClass);
+    }
+  });
+    </script>
+</body>
+</html>

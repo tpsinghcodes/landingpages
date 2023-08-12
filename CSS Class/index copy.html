@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Desiteck : My First Landing Page</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav>
+      <div class="logo">
+        <img src="assets/desitecklogo.png" alt="Desiteck">
+        <h4>Desiteck</h4> 
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="active">Home</li>
+          <li>Feature</li>
+          <li>Price</li>
+          <li>Testimonial</li>
+        </ul>
+      </div>
+      <div class="button">
+        <button type="button">Get Started</button>
+      </div>
+      <div class="mobileMenu">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero-section-div">
+      <div class="left">a</div>
+      <div class="right">a</div>
+    </div>
+  </section>
+  <script>
+    const header = document.querySelector(".page-header");
+    const toggleClass = "sticky";
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      //alert(currentScroll)
+      if (currentScroll > 20) {
+        header.classList.add(toggleClass);
+      } else {
+        header.classList.remove(toggleClass);
+    }
+  });
+    </script>
+</body>
+</html>
